@@ -10,20 +10,13 @@ const Header = () => {
     },
     {
       id: 2,
-      link: "about",
+      link: "skills",
     },
     {
       id: 3,
-      link: "portfolio",
+      link: "projects",
     },
-    {
-      id: 4,
-      link: "expertise",
-    },
-    {
-      id: 5,
-      link: "contact",
-    },
+    
   ];
 
   return (
