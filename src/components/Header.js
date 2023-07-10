@@ -1,8 +1,10 @@
-import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+
+import React  from "react";
+// import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Header = () => {
-    const [navbar, setNavbar] = useState(false)
+    // const [navbar, setNavbar] = useState(false)
   const navLinks = [
     {
       id: 1,
@@ -16,6 +18,11 @@ const Header = () => {
       id: 3,
       link: "projects",
     },
+    {
+      id: 4,
+      link: "contact",
+    },
+    
     
   ];
 
@@ -31,27 +38,28 @@ const Header = () => {
             key={id}
             className="px-4 cursor-pointer capitalize font-medium text-slate-300 hover:scale-125 hover:text-slate-50"
           >
-            {link}
+            <Link to={link} smooth duration={500}>{link}</Link>
           </li>
         ))}
       </ul>
      
-      <div onClick={() => setNavbar(!navbar)} className="cursor-pointer pr-3 z-10 text-slate-400 md:hidden">
+      {/* <div onClick={() => setNavbar(!navbar)} className="cursor-pointer pr-3 z-10 text-slate-400 md:hidden">
         {navbar ? <FaTimes size={30}/> : <FaBars size={30}/>}
-        </div> 
+        <FaTimes size={30}/>
+        </div>  */}
 
-        {navbar && (
-           <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-pink-900 to-purple-800">
+        {/* {navbar && (
+           <ul className="flex flex-col justify-center items-center sm:absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-gray-900 to-gray-800">
            {navLinks.map(({ id, link }) => (
              <li
                key={id}
                className="px-4 cursor-pointer capitalize py-6 text-3xl"
              >
-               {link}
+               <Link onClick={() => setNavbar(!navbar)} to={link} smooth duration={500}>{link}</Link>
              </li>
            ))}
            </ul>
-        )}
+        )} */}
 
         
 

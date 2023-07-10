@@ -1,0 +1,16 @@
+.glow-border {
+    animation: glowing 2s infinite;
+  }
+  
+  @keyframes glowing {
+    0% {
+      box-shadow: 0 0 5px #2DB7F5;
+    }
+    50% {
+      box-shadow: 0 0 20px #2DB7F5, 0 0 30px #2DB7F5;
+    }
+    100% {
+      box-shadow: 0 0 5px #2DB7F5;
+    }
+  }
+  

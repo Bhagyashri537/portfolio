@@ -47,7 +47,7 @@ const ContactLinks = () => {
   ];
 
   return (
-    <div className=" hidden lg:flex flex-col top-60 left-0 fixed">
+    <div className=" hidden lg:flex flex-col top-60 left-0 absolute">
       <ul>
         {Links.map(({ id, child, href, style, download }) => (
           <li
