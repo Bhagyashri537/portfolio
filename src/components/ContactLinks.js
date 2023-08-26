@@ -40,7 +40,7 @@ const ContactLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/res.pdf",
+      href: "/newres.pdf",
       style: "rounded-br-md",
       download: true,
     },
