@@ -7,13 +7,13 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div name="home" className="h-screen w-full bg-gradient-to-b from-blue-950 to-pink-950">
+    <div name="home" className="h-screen w-full bg-gradient-to-b from-black to-blue-950">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row gap-y-0 ">
         
             <div className="flex flex-col justify-center h-full w-full">
-              <h2 className="text-5xl sm:text-4xl font-bold text-white max-w-2xl">
+              <h2 className="text-5xl sm:text-4xl font-bold text-white max-w-2xl top-0">
                 I'm{" "}
-                <span style={{ color: "yellow", margin: "10px", display: "inline" }}>
+                <span style={{ color: "cyan", margin: "10px", display: "inline" }}>
                   <Typewriter
                     words={["Bhagyashri Deoghare", "Frontend Developer"]}
                     loop={false}
@@ -26,7 +26,7 @@ const Home = () => {
                 </span>
               </h2>
               <div className="">
-                <p className="text-gray-200 py-4 max-w-5xl">
+                <p className="text-gray-200 py-4 max-w-5xl ">
                   I am a front-end developer skilled in React.js, HTML, and CSS,
                   dedicated to crafting responsive and user-friendly websites.
                   With a keen eye for design and a passion for creating impactful
@@ -47,7 +47,7 @@ const Home = () => {
               </div>
              
             </div>
-          <div className="">
+          <div className="overflow-x-hidden">
               <Lottie animationData={logo1} className="md:w-full ml-20  mx-auto  pb-28" />
             </div>
       </div>

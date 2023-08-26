@@ -27,18 +27,18 @@ const Header = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-16 text-white bg-gradient-to-r from-pink-700 to-purple-900 px-3 fixed">
+    <div className="flex justify-between items-center w-full h-16 text-white bg-gradient-to-r bg-black px-3 fixed">
       <div>
         <h1 className="text-4xl font-signature ml-2">Bhagyashri</h1>
       </div>
 
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex ">
         {navLinks.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-slate-300 hover:scale-125 hover:text-slate-50"
+            className="px-4 cursor-pointer capitalize  font-medium text-slate-300 hover:scale-125 hover:text-slate-50"
           >
-            <Link to={link} smooth duration={500}>{link}</Link>
+            <Link to={link} smooth duration={500} className="bg-cyan-400 text-black p-2 px-2 rounded-lg">{link}</Link>
           </li>
         ))}
       </ul>

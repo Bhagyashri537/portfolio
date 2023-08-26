@@ -40,20 +40,20 @@ const ContactLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/resume.pdf",
+      href: "/res.pdf",
       style: "rounded-br-md",
       download: true,
     },
   ];
 
   return (
-    <div className=" hidden lg:flex flex-col top-60 left-0 absolute">
+    <div className=" hidden lg:flex flex-col top-60 left-0 fixed">
       <ul>
         {Links.map(({ id, child, href, style, download }) => (
           <li
             key={id}
             className={
-              "flex justify-center items-center w-40 h-14 px-4 bg-black ml-[-100px] hover:ml-[-10px] hover:rounded-lg duration-300"
+              "flex justify-center items-center w-40 h-14 px-4 bg-cyan-600 ml-[-100px] hover:ml-[-10px] hover:rounded-lg duration-300"
              + " " + style}
           >
             <a

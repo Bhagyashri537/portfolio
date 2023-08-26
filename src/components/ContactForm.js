@@ -4,7 +4,7 @@ import contact from "../images/contact.png"
 
 const ContactForm = () => {
   return (
-    <div name="contact" className=" pt-10 w-full h-screen bg-gradient-to-b from-pink-950 to-blue-950 p-4 ">
+    <div name="contact" className=" pt-10 w-full h-screen bg-gradient-to-b from-blue-950 to-black p-4 ">
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-12 flex justify-center items-center ">
       

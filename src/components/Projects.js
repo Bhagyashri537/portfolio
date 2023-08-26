@@ -2,7 +2,7 @@ import React from "react";
 import res from "../images/res.png";
 import youtube from "../images/youtube.png";
 import gpt1 from "../images/gpt1.png";
-import weather from "../images/weather.png";
+import mailbox from "../images/mailbox.png";
 import './Index.css'
 
 const Projects = () => {
@@ -27,14 +27,14 @@ const Projects = () => {
     },
     {
       id: 4,
-      name:'Weather App',
-      src: weather,
-      githubLink: "https://github.com/Bhagyashri537/weather-app"
+      name:'MailBox Client App',
+      src: mailbox,
+      githubLink: "https://github.com/Bhagyashri537/mailbox-client"
     }
   ];
 
   return (
-    <div name="projects" className="bg-gradient-to-b from-blue-950 to-pink-950 w-full text-white min-h-screen px-8">
+    <div name="projects" className="bg-gradient-to-b from-black to-blue-950 w-full text-white min-h-screen px-8 overflow-hidden">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center h-full">
         <div className="pb-8">
           <h1 className="text-4xl font-bold inline border-b-4 border-gray-400">
@@ -45,12 +45,12 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-10 sm:px-0">
           {myProjects.map(({ id, name, src, githubLink }) => (
-            <div key={id}>
+            <div key={id} className="project-item relative bg-white bg-opacity-20 p-4 rounded-lg shadow-md backdrop-blur-md overflow-hidden">
               <div className="relative group">
                 <img
                   src={src}
                   alt="/"
-                  className="rounded-lg hover:scale-150 duration-300"
+                  className="rounded-lg hover:scale-150 duration-300 "
                 />
                 <div className="absolute inset-0 rounded-lg bg-transparent glow-border"></div>
               </div>

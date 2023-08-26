@@ -11,7 +11,7 @@ const Skillbar = ({ progress, logoUrl }) => {
   };
 
   return (
-    <div className="relative w-32 h-32">
+    <div className="relative w-32 h-32 overscroll-none">
       <Circle
         percent={progress}
         strokeColor="blue"
